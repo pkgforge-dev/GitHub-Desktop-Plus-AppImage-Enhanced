@@ -1,25 +1,37 @@
 <div align="center">
 
-# TEMPLATE-AppImage 🐧
+# GitHub-Desktop-Plus-AppImage-Enhanced 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/TEMPLATE-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/TEMPLATE-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/TEMPLATE-AppImage)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced)](https://github.com/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://raw.githubusercontent.com/pol-rivero/github-desktop-plus/refs/heads/main/app/static/linux/logos/1024x1024.png" width="128" />
 </p>
 
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest) | [Click here](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| [Click here](https://github.com/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced/releases/latest) | [Click here](https://github.com/pol-rivero/github-desktop-plus) |
 
 </div>
 
+## ⚠️ Create `github-desktop-auth.desktop` inside `~/.local/share/applications` ⚠️
+with this content
+```
+[Desktop Entry]
+Name=GitHub Desktop Auth
+Exec=/path/to/GitHub_Desktop_Plus*.AppImage %u
+Type=Application
+NoDisplay=true
+MimeType=x-scheme-handler/x-github-desktop-auth;
+```
+run on terminal `xdg-mime default github-desktop-auth.desktop x-scheme-handler/x-github-desktop-auth` to be able to login with authotization from browser webpage
+
 ---
 
-AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
+AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
 
 **This AppImage bundles everything and it should work on any Linux distro, including old and musl-based ones.**
 
