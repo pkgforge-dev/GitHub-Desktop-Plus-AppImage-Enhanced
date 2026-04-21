@@ -24,10 +24,10 @@ case "$ARCH" in # they use AMD64 and ARM64 for the deb links
 	aarch64) deb_arch=arm64;;
 esac
 DEB_LINK=$(wget https://api.github.com/repos/shiftkey/desktop/releases/latest -O - | \
-grep "browser_download_url" | \
+	grep "browser_download_url" | \
     grep "$deb_arch.deb" | \
-    head -n 1 | \
-    cut -d '"' -f 4)
+    cut -d '"' -f 4 | \
+    head -n 1)
 #      | sed 's/[()",{} ]/\n/g' | grep -o -m 1 "https.*-$deb_arch-*.deb")
 echo "$DEB_LINK" | awk -F'/' '{gsub(/^v/, "", $(NF-1)); print $(NF-1); exit}' > ~/version
 if ! wget --retry-connrefused --tries=30 "$DEB_LINK" -O /tmp/app.deb 2>/tmp/download.log; then
