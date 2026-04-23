@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/GitHub-Desktop-AppImage-Enhanced)](https://github.com/pkgforge-dev/GitHub-Desktop-AppImage-Enhanced/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/shiftkey/desktop/blob/linux/app/static/linux/logos/1024x1024.png" width="128" />
+  <img src="https://raw.githubusercontent.com/pol-rivero/github-desktop-plus/refs/heads/main/app/static/linux/logos/1024x1024.png" width="128" />
 </p>
 
 
