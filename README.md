@@ -17,6 +17,17 @@
 
 </div>
 
+## ⚠️ Create `github-desktop-auth.desktop` inside `~/.local/share/applications` ⚠️
+with this content
+[Desktop Entry]
+Name=GitHub Desktop Auth
+Exec=/path/to/GitHub_Desktop_Plus*.AppImage %u
+Type=Application
+NoDisplay=true
+MimeType=x-scheme-handler/x-github-desktop-auth;
+
+run on terminal `xdg-mime default github-desktop-auth.desktop x-scheme-handler/x-github-desktop-auth` to be able to login with authotization from browser webpage
+
 ---
 
 AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
