@@ -12,7 +12,15 @@ export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/* /usr/bin/gnome* /usr/lib/gnome-keyring/devel/gkm*.so* /usr/lib/pkcs11/gnome*.so* /usr/lib/security/pam*.so* /usr/bin/secret-tool /usr/lib/libsecret*.so* /usr/lib/libcurl*.so*
+quick-sharun ./AppDir/bin/* \
+  /usr/bin/git-lfs \
+  /usr/bin/gnome* \
+  /usr/lib/gnome-keyring/devel/gkm*.so* \
+  /usr/lib/pkcs11/gnome*.so* \
+  /usr/lib/security/pam*.so* \
+  /usr/bin/secret-tool \
+  /usr/lib/libsecret*.so* \
+  /usr/lib/libcurl*.so*
 
 # Additional changes can be done in between here
 
