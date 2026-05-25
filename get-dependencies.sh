@@ -9,7 +9,8 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
 	git-lfs		   \
 	gnome-keyring  \
-	libcurl-gnutls
+	libcurl-gnutls \
+	pre-commit
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
