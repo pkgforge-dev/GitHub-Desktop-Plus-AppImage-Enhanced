@@ -39,5 +39,5 @@ bsdtar -xvf ./data.tar.zst
 rm -f ./*.zst
 rm -rf ./usr/share/doc
 mv -v ./usr/lib/desktop-plus/* ./AppDir/bin
-cp ./usr/share/icons/hicolor/256x256/apps/github-desktop-plus.png ./AppDir/.DirIcon
-mv -v ./usr/share/icons/hicolor/256x256/apps/github-desktop-plus.png ./usr/share/applications/github-desktop-plus.desktop ./AppDir
+cp ./usr/share/icons/hicolor/256x256/apps/desktop-plus.png ./AppDir/.DirIcon
+mv -v ./usr/share/icons/hicolor/256x256/apps/desktop-plus.png ./usr/share/applications/desktop-plus.desktop ./AppDir
