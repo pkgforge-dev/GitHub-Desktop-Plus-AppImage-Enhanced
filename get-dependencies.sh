@@ -38,6 +38,6 @@ ar xvf /tmp/app.deb
 bsdtar -xvf ./data.tar.zst
 rm -f ./*.zst
 rm -rf ./usr/share/doc
-mv -v ./usr/lib/github-desktop-plus/* ./AppDir/bin
+mv -v ./usr/lib/desktop-plus/* ./AppDir/bin
 cp ./usr/share/icons/hicolor/256x256/apps/github-desktop-plus.png ./AppDir/.DirIcon
 mv -v ./usr/share/icons/hicolor/256x256/apps/github-desktop-plus.png ./usr/share/applications/github-desktop-plus.desktop ./AppDir
