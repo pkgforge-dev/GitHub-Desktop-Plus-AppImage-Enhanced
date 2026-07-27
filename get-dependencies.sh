@@ -40,4 +40,4 @@ rm -f ./*.zst
 rm -rf ./usr/share/doc
 mv -v ./usr/lib/desktop-plus/* ./AppDir/bin
 cp ./usr/share/icons/hicolor/256x256/apps/gh-desktop-plus.png ./AppDir/.DirIcon
-mv -v ./usr/share/icons/hicolor/256x256/apps/desktop-plus.png ./usr/share/applications/desktop-plus.desktop ./AppDir
+mv -v ./usr/share/icons/hicolor/256x256/apps/gh-desktop-plus.png ./usr/share/applications/desktop-plus.desktop ./AppDir
