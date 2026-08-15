@@ -24,8 +24,6 @@ quick-sharun ./AppDir/bin/* \
   /usr/lib/libsecret*.so* \
   /usr/lib/libcurl*.so*
 
-# Additional changes can be done in between here
-
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
