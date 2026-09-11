@@ -6,11 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-	git-lfs		   \
-	gnome-keyring  \
-	libcurl-gnutls \
-	pre-commit
+pacman -Syu --noconfirm git-lfs gnome-keyring libcurl-gnutls pre-commit
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
